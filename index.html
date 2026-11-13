@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Doce Ninar — boutique baby fictícia para demonstração.">
+  <title>Doce Ninar | Boutique Baby</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="topline">Pequenos encantos para os primeiros grandes momentos ♡</div>
+  <header class="header">
+    <a class="brand" href="#"><span class="brand-mark">dn</span><span><b>Doce Ninar</b><small>UM CARINHO EM CADA DETALHE</small></span></a>
+    <nav><a href="#inicio">Início</a><a href="#produtos">Loja</a><a href="#sobre">Nossa essência</a></nav>
+    <button class="bag-button" id="open-cart">Sacola <span id="bag-count">0</span></button>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-copy">
+        <span class="eyebrow">BOUTIQUE BABY</span>
+        <h1>Amor em cada<br><em>pequeno detalhe</em></h1>
+        <p>Roupinhas, acessórios e mimos escolhidos com carinho para acompanhar os primeiros momentos do bebê.</p>
+        <a class="primary" href="#produtos">Conhecer a loja</a>
+        <div class="hero-foot">♡ Delicadeza em cada escolha</div>
+      </div>
+      <div class="hero-art">
+        <div class="arch"></div><div class="moon">✦</div>
+        <div class="teddy"><div class="ear e1"></div><div class="ear e2"></div><div class="teddy-face"><i></i><i></i><b></b></div></div>
+        <span class="flower fl1">✿</span><span class="flower fl2">✿</span>
+        <div class="art-note">feito com<br><b>carinho</b></div>
+      </div>
+    </section>
+
+    <section class="categories">
+      <span class="eyebrow">UM MUNDO DE DELICADEZA</span>
+      <h2>Encontre o mimo perfeito</h2>
+      <p>Peças especiais para deixar cada fase ainda mais doce.</p>
+      <div class="category-grid">
+        <button data-category="Roupinhas"><span>01</span><b>Roupinhas</b><small>Conforto para todo dia</small></button>
+        <button data-category="Crochê"><span>02</span><b>Crochê</b><small>Detalhes feitos à mão</small></button>
+        <button data-category="Acessórios"><span>03</span><b>Acessórios</b><small>Pequenos encantos</small></button>
+        <button data-category="Enxoval"><span>04</span><b>Enxoval</b><small>Carinho desde o início</small></button>
+      </div>
+    </section>
+
+    <section class="products" id="produtos">
+      <div class="section-head"><div><span class="eyebrow">ESCOLHIDOS COM AMOR</span><h2>Um carinho para cada bebê</h2></div><button class="clear-filter" id="clear-filter">Ver todos</button></div>
+      <div class="tools"><input id="search" type="search" placeholder="Buscar um produto..."><select id="sort"><option value="featured">Destaques</option><option value="low">Menor preço</option><option value="high">Maior preço</option></select></div>
+      <div class="product-grid" id="product-grid"></div>
+      <p class="demo-note">Esta é uma loja fictícia para demonstração. Produtos, preços e pedidos são ilustrativos.</p>
+    </section>
+
+    <section class="promise" id="sobre"><span class="eyebrow">DOCE NINAR</span><h2>Porque cada começo merece ser especial</h2><p>Uma seleção delicada para celebrar o amor que chega junto com um bebê.</p></section>
+  </main>
+
+  <footer><a class="brand" href="#"><span class="brand-mark">dn</span><span><b>Doce Ninar</b><small>UM CARINHO EM CADA DETALHE</small></span></a><span>Feito com delicadeza para os pequenos.</span><small>© Doce Ninar · Loja fictícia</small></footer>
+
+  <div class="scrim" id="scrim"></div>
+  <aside class="cart" id="cart" aria-hidden="true">
+    <div class="cart-head"><div><span class="eyebrow">SUA SELEÇÃO</span><h2>Minha sacola</h2></div><button id="close-cart" class="close">×</button></div>
+    <div id="cart-items" class="cart-items"><p class="empty">Sua sacola está vazia por enquanto ♡</p></div>
+    <div class="cart-bottom"><div class="total"><span>Total ilustrativo</span><b id="total">R$ 0,00</b></div><p>Sem cadastro, endereço ou pagamento. É só uma simulação!</p><button class="primary full" id="finish">Concluir pedido fictício</button></div>
+  </aside>
+  <div class="toast" id="toast" role="status"></div>
+  <script src="script.js"></script>
+</body>
+</html>
